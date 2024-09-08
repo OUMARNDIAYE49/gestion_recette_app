@@ -36,7 +36,7 @@
           </select>
         </div>
         <button type="submit" class="btn btn-primary">Enregistrer</button>
-        <router-link to="/recettes" class="btn btn-secondary ms-2">Annuler</router-link>
+        <router-link to="/recettes" class="btn btn-danger ms-2">Annuler</router-link>
       </form>
     </div>
   </template>
@@ -77,7 +77,7 @@
   
   <style scoped>
   .container {
-    max-width: 800px;
+    max-width: 1000px;
   }
   form {
     margin-top: 20px;

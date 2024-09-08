@@ -5,9 +5,9 @@
           <h1 class="card-title">{{ recette.titre }}</h1>
         </div>
         <div class="card-body">
-          <p><strong>Ingrédients:</strong></p>
+          <p><strong>Ingrédients: </strong></p>
           <p>{{ recette.ingredients }}</p>
-          <p><strong>Type:</strong> <span class="badge bg-secondary">{{ recette.type }}</span></p>
+          <p><strong>Type: </strong> <span>{{ recette.type }}</span></p>
         </div>
         <div class="card-footer text-end">
           <router-link to="/recettes" class="btn btn-primary">Retour à la liste</router-link>
@@ -40,7 +40,7 @@
   
   <style scoped>
   .container {
-    max-width: 900px;
+    max-width: 1000px;
   }
   
   .card {

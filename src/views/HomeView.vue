@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
 .home-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }

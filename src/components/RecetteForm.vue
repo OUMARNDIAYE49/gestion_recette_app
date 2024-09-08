@@ -67,7 +67,7 @@
         } else {
           recettesStore.ajouterRecette(recette.value);
         }
-        router.push('/');
+        router.push('/recettes');
       };
   
       return { recette, handleSubmit, isEditMode };
@@ -75,7 +75,11 @@
   };
   </script>
   
-  <style>
+  <style scoped>
+  .container {
+  max-width: 1000px;
+  margin-top: 20px;
+}
   /* Ajoute ici des styles personnalisés si nécessaire */
   </style>
   

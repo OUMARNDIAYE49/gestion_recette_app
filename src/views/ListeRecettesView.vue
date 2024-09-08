@@ -19,10 +19,10 @@
           <td>{{ recette.id }}</td>
           <td>{{ recette.titre }}</td>
           <td>{{ recette.ingredients }}</td>
-          <td><span class="badge bg-secondary">{{ recette.type }}</span></td>
+          <td><span>{{ recette.type }}</span></td>
           <td>
-            <router-link :to="{ name: 'VoirRecette', params: { id: recette.id } }" class="btn btn-info btn-sm me-2">Voir</router-link>
-            <router-link :to="{ name: 'ModifierRecette', params: { recetteId: recette.id } }" class="btn btn-warning btn-sm me-2">Modifier</router-link>
+            <router-link :to="{ name: 'VoirRecette', params: { id: recette.id } }" class="btn btn-info btn-sm me-3">Voir details</router-link>
+            <router-link :to="{ name: 'ModifierRecette', params: { recetteId: recette.id } }" class="btn btn-warning btn-sm me-3">Modifier</router-link>
             <button @click="supprimer(recette.id)" class="btn btn-danger btn-sm">Supprimer</button>
           </td>
         </tr>
@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .table {
